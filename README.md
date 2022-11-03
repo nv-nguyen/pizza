@@ -36,8 +36,8 @@ pip install -v -e .
 cd mmsegmentation
 pip install -e .  # or "python setup.py develop"
 ```
-## 2D object tracking in the wild with [1st Place Solution for the UVO Challenge](https://arxiv.org/abs/2110.10239)
-Note: We track objects not seen during the training with [1st Place Solution for the UVO Challenge](https://arxiv.org/abs/2110.10239). This implementation is slightly modified comparing to [the original repo](https://github.com/dulucas/UVO_Challenge) to make it easy to run on different dataset of [BOP challenge](https://bop.felk.cvut.cz/challenges/): 
+## 2D object tracking in the wild with [1st Place Solution for the UVO Challenge](https://arxiv.org/abs/2110.11661)
+Note: We track objects not seen during the training with [1st Place Solution for the UVO Challenge](https://arxiv.org/abs/2110.11661). This implementation is slightly modified comparing to [the original repo](https://github.com/dulucas/UVO_Challenge) to make it easy to run on different dataset of [BOP challenge](https://bop.felk.cvut.cz/challenges/): 
 
 ![media/seg_pipeline.png](media/seg_pipeline.png)
 
