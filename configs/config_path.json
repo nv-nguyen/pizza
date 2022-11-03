@@ -1,0 +1,5 @@
+{
+    "input_dir": "./data/",
+    "output_dir": "./tmp/demo",
+    "weight_dir": "PUT_YOUR_PATH"
+  }

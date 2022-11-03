@@ -1,0 +1,15 @@
+{
+    "raft": {
+        "root_dir": "./core/",
+        "small": false,
+        "mixed_precision": false,
+        "alternate_corr": false,
+        "opflow_num_iters": 10
+    },
+    "tracking":{
+        "max_num_mask_per_frame": 100,
+        "nms_thre":0.7,
+        "mask_matching_thre":0.5,
+        "patience":5
+    }
+   }

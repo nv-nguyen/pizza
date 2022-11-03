@@ -1,0 +1,3 @@
+ddl https://drive.google.com/file/d/1iiZl8Ha_mYOqBNNjiehV0DBvBJgAGm6O/view?usp=sharing --filename $WEIGHT_ROOT/swin_l_finetuned_w_uvo.pth
+ddl https://drive.google.com/file/d/1rwV_TkBLYTl6hj5tOyP68QR6g-sILE1a/view?usp=sharing --filename $WEIGHT_ROOT/seg_swin_l_uvo_finetuned.pth
+ddl https://drive.google.com/file/d/1v6Jf5espR4LDpFCMnrJB9DhhlajHlGfh/view?usp=sharing --filename $WEIGHT_ROOT/raft-things.pth

@@ -1,0 +1,44 @@
+{
+    "model" :
+      {
+          "backbone": "resnet18",
+          "img_feature_dim": 128,
+          "multi_frame": false,
+          "pretrained_weights_resnet18": "pretrained/resnet18-f37072fd.pth"
+      },
+    "train":
+    {
+      "batch_size": 256,
+          "optimizer": {
+              "lr": 1.0e-4,
+              "weight_decay": 5e-4
+          },
+          "scheduler":
+          {
+              "gamma": 0.2,
+              "milestones": [20,50,80,100],
+              "update_range": "epoch"
+          },
+          "epochs": 500,
+          "num_workers": 10
+    },
+    "log":
+      {
+          "log_interval": 10,
+          "tensorboard": "tensorboard",
+          "weights": "weights"
+      },
+    "dataset":
+    {
+      "image_size": 224,
+      "len_sequences": 2,
+      "use_augmentation": false,
+      "save_path": "visualization",
+      "debug_mode": false,
+      "shapeNet_path": "train",
+      "modelNet_path": "test"
+    },
+    "input_path": "PUT_YOUR_PATH/modelNet/",
+    "output_path": "/PUT_YOUR_PATH/modelNet_results"
+  }
+  
