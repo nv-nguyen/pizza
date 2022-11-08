@@ -25,16 +25,15 @@ We recommend creating a new Anaconda environment to use *pizza*. Use the followi
 ```
 conda env create -f environment.yml
 conda activate pizza
-
-# Assuming that you are in the root folder of "pizza"
 pip install mmcv-full==1.3.8 -f https://download.openmmlab.com/mmcv/dist/cu102/1.7.0/index.html
-cd mmdetection
-pip install -r requirements/build.txt
-pip install -v -e .
-
 # Assuming that you are in the root folder of "pizza"
 cd mmsegmentation
 pip install -e .  # or "python setup.py develop"
+
+# Optional: If you don't have initial boxes
+cd mmdetection
+pip install -r requirements/build.txt
+pip install -v -e .
 ```
 ## 2D object tracking in the wild with [1st Place Solution for the UVO Challenge](https://arxiv.org/abs/2110.11661)
 Note: We track objects not seen during the training with [1st Place Solution for the UVO Challenge](https://arxiv.org/abs/2110.11661). This implementation is slightly modified comparing to [the original repo](https://github.com/dulucas/UVO_Challenge) to make it easy to run on different dataset of [BOP challenge](https://bop.felk.cvut.cz/challenges/): 
